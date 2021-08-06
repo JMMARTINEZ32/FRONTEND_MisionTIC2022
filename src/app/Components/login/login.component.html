@@ -1,0 +1,15 @@
+<div class="container-login">
+  <div class="login">
+    <label class="label-login">Bienvenido, ingrese usuario y contraseña.</label>
+    <span class="p-float-label">
+      <input type="text" pInputText [(ngModel)]="email" />
+      <label class="label-static">Correo</label>
+    </span>
+    <span class="p-float-label">
+      <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+      <label class="label-static">Contraseña</label>
+    </span>
+
+    <button class="btn-login" pButton type="button" label="Click"></button>
+  </div>
+</div>

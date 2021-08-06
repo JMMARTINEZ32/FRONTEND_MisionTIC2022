@@ -1,0 +1,30 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+}
+
+.main-body {
+  background: #1b1c21;
+}
+
+*::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.6rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: lighten($color: #565757, $amount: 10);
+  border-radius: 4px;
+
+  &:hover {
+    background: #565757;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: darken($color: #565757, $amount: 8);
+  }
+}
+
+::-webkit-input-placeholder { color: #c2c2c2; }
